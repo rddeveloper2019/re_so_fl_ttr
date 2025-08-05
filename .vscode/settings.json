@@ -6,11 +6,12 @@
     "**/.git": true,
     "**/.svn": true,
     "**/.hg": true,
-    "**/CVS": true,
     "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/CVS": true,
     "**/*.freezed.dart": true,
     "**/*.g.dart": true,
-    "**/.gitkeep": false
+    "**/.gitkeep": true
   },
-  "explorerExclude.backup": null
+  "explorerExclude.backup": {}
 }
