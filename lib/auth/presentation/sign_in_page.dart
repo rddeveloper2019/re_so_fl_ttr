@@ -10,10 +10,11 @@ class SignInPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [Icon(MdiIcons.github, size: 150), Text("Ok 2333deded3")],
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [Icon(MdiIcons.github, size: 150), Text("Ok 22345")],
+          ),
         ),
       ),
     );

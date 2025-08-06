@@ -40,6 +40,6 @@ targets:
   $default:
     builders:
       auto_route_generator:auto_route_generator:
-        enabled: true
+        enabled: false
       build_runner:build_runner:
-        enabled: true
+        enabled: false
