@@ -27,8 +27,11 @@ class GithubAuthenticator {
   final CredentialsStorage _credentialsStorage;
   final Dio _dio;
 
-  static const clientId = '';
-  static const clientSecret = '';
+  // static const clientId = '';
+  // static const clientSecret = '';
+  static const clientId = 'Ov23liw6p2ooloVwl70I';
+  static const clientSecret = '130e3332df3881fbcb4b76f3f9d60278cb0d213a';
+
   static const scopes = ['read:user', 'repo'];
 
   static final authorizationEndpoint = Uri.parse(
@@ -44,6 +47,9 @@ class GithubAuthenticator {
   );
 
   static final redirectUrl = Uri.parse('http://localhost:3000/callback');
+  // static final redirectUrl = Uri.parse(
+  //   'https://github.com/rddeveloper2019/auth/github/callback',
+  // );
 
   Future<Credentials?> getSignedInCredentials() async {
     try {
@@ -88,12 +94,16 @@ class GithubAuthenticator {
         queryParameters,
       );
       await _credentialsStorage.save(httpClient.credentials);
+      print('saved');
       return right(unit);
-    } on FormatException {
+    } on FormatException catch (e) {
+      print('FormatException ${e.message}');
       return left(const AuthFailure.server());
     } on AuthorizationException catch (e) {
+      print('AuthorizationException ${e.error} ${e.description}');
       return left(AuthFailure.server('${e.error}: ${e.description}'));
-    } on PlatformException {
+    } on PlatformException catch (e) {
+      print('PlatformException ${e.message}');
       return left(const AuthFailure.storage());
     }
   }

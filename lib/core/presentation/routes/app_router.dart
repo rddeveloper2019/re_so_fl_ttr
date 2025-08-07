@@ -1,4 +1,6 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:flutter/material.dart';
+import 'package:re_so_fl_ttr/auth/presentation/authorization_page.dart';
 import 'package:re_so_fl_ttr/auth/presentation/sign_in_page.dart';
 import 'package:re_so_fl_ttr/splash/presentation/splash_page.dart';
 import 'package:re_so_fl_ttr/starred_repos/presentation/starred_repos_page.dart';
@@ -12,5 +14,6 @@ class AppRouter extends RootStackRouter {
     AutoRoute(page: SplashRoute.page, initial: true),
     AutoRoute(page: SignInRoute.page, path: '/sign-in'),
     AutoRoute(page: StarredReposRoute.page, path: '/starred'),
+    AutoRoute(page: AuthorizationRoute.page, path: '/auth'),
   ];
 }

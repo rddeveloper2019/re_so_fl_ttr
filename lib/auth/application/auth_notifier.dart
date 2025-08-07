@@ -32,10 +32,11 @@ class AuthNotifier extends StateNotifier<AuthState> {
     final grant = _authenticator.createGrant();
     final url = _authenticator.getAuthorizationUrl(grant);
 
-    await authorizationCallback(url);
+    final result = await authorizationCallback(url);
+
     final failureOrSuccess = await _authenticator.handleAuthorizationResponse(
       grant,
-      url.queryParameters,
+      result.queryParameters,
     );
 
     state = failureOrSuccess.fold(
