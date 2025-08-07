@@ -13,10 +13,7 @@ class SignInPage extends StatelessWidget {
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(MdiIcons.github, size: 150),
-              Text("Ok 217777852745"),
-            ],
+            children: [Icon(MdiIcons.github, size: 150), Text("Ok I  hot")],
           ),
         ),
       ),
