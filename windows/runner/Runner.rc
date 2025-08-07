@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "student.rd-pet-projects." "\0"
-            VALUE "FileDescription", "re_so_fl_ttr_" "\0"
+            VALUE "CompanyName", "com.example" "\0"
+            VALUE "FileDescription", "blank" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "re_so_fl_ttr_" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2025 student.rd-pet-projects.. All rights reserved." "\0"
-            VALUE "OriginalFilename", "re_so_fl_ttr_.exe" "\0"
-            VALUE "ProductName", "re_so_fl_ttr_" "\0"
+            VALUE "InternalName", "blank" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2025 com.example. All rights reserved." "\0"
+            VALUE "OriginalFilename", "blank.exe" "\0"
+            VALUE "ProductName", "blank" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

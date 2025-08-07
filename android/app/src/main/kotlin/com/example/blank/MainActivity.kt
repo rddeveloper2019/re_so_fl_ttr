@@ -1,4 +1,4 @@
-package student.rdpetprojects.re_so_fl_ttr_
+package com.example.blank
 
 import io.flutter.embedding.android.FlutterActivity
 
