@@ -33,9 +33,6 @@ class _AuthorizationPageState extends State<AuthorizationPage> {
     super.initState();
     _initializeWebViewController();
     _clearCookiesAndCache();
-    if (Platform.isAndroid) {
-      WebViewPlatform.platform = SurfaceAndroidView();
-    }
   }
 
   Future<void> _clearCookiesAndCache() async {
