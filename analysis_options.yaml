@@ -38,3 +38,4 @@ analyzer:
     parameter_assignments: error
     sort_unnamed_constructors_first: ignore
     sort_pub_dependencies: ignore
+    recursive_getters: ignore
